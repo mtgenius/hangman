@@ -1,0 +1,58 @@
+.guessed {
+	opacity: 0.1;
+}
+
+#hangman {
+	font-size: 1.25em;
+	line-height: 3em;
+}
+
+#hangman-answer {
+	font-family: monospace;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+#hangman-clue {
+	font-family: "Roboto", sans-serif;
+}
+
+#hangman-end {
+	background-position: left top;
+	display: none;
+	height: 310px;
+	width: 223px;
+}
+
+#hangman-graphic {
+	background-image: url("hangman.png");
+	background-position: 0 0;
+	height: 256px;
+	width: 256px;
+}
+
+#hangman-graphics {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+#hangman-letters {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: monospace;
+	justify-content: space-between;
+	text-transform: uppercase;
+}
+
+	#hangman-letters > span {
+		cursor: pointer;
+		margin: 0.5em;
+		padding: 0 1em;
+	}
+
+		#hangman-letters > span:hover {
+			color: @p500;
+			font-weight: bold;
+		}
